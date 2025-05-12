@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Login from './src/components/Login';
+import Home from './src/screens/Home';
+import Quiz from './src/screens/Quiz';
+import ReviewAnswers from './src/screens/ReviewAnswers';
+import Results from './src/screens/Results';
+import Podium from './src/screens/Podium';
+import SecondStage from './src/screens/SecondStage';
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Quiz" component={Quiz} />
+        <Stack.Screen name="ReviewAnswers" component={ReviewAnswers} />
+        <Stack.Screen name="Results" component={Results} />
+        <Stack.Screen name="Podium" component={Podium} />
+        <Stack.Screen name="SecondStage" component={SecondStage} />
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;

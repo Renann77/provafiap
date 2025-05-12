@@ -1,0 +1,31 @@
+{
+    "questions": {
+      "react": [
+        {
+          "id": 1,
+          "question": "What hook manages side effects in React?",
+          "options": ["useState", "useEffect", "useContext", "useRef"],
+          "correctAnswer": 1,
+          "theme": "react"
+        }
+      ],
+      "navigation": [
+        {
+          "id": 1,
+          "question": "Which navigation type is used for tab-based navigation?",
+          "options": ["Stack", "Tab", "Drawer", "Switch"],
+          "correctAnswer": 1,
+          "theme": "navigation"
+        }
+      ],
+      "state": [
+        {
+          "id": 1,
+          "question": "Which hook is used for local state management?",
+          "options": ["useState", "useReducer", "useContext", "useRef"],
+          "correctAnswer": 0,
+          "theme": "state"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,1016 @@
+{
+  "Por que React Native": [
+    {
+      "question": "Qual é a principal vantagem do React Native?",
+      "answers": [
+        "Código nativo em Swift",
+        "Desempenho inferior ao nativo",
+        "Código único para múltiplas plataformas",
+        "Somente para Android"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "React Native permite criar apps para quais plataformas?",
+      "answers": [
+        "Android e iOS",
+        "Apenas Android",
+        "Apenas iOS",
+        "Web apenas"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "React Native é baseado em qual linguagem?",
+      "answers": [
+        "Kotlin",
+        "Dart",
+        "Java",
+        "JavaScript"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Qual empresa mantém o React Native?",
+      "answers": [
+        "Google",
+        "Microsoft",
+        "Facebook",
+        "Amazon"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Por que React Native é considerado multiplataforma?",
+      "answers": [
+        "Permite usar C++",
+        "Permite deploy em servidores",
+        "Permite compilar para Android e iOS",
+        "Executa diretamente no navegador"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Quando NÃO usar React Native?",
+      "answers": [
+        "App simples com lista",
+        "App com UI nativa altamente customizada",
+        "App híbrido",
+        "Protótipo"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "O que é hot reloading?",
+      "answers": [
+        "Recarga do SO",
+        "Reinício do dispositivo",
+        "Atualização de código em tempo real",
+        "Carregamento de imagens"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "React Native compila para:",
+      "answers": [
+        "HTML",
+        "C++",
+        "Código nativo",
+        "Flutter"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Qual dessas empresas NÃO usa React Native?",
+      "answers": [
+        "Instagram",
+        "Uber Eats",
+        "Tesla",
+        "Netflix"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Qual vantagem em relação ao desenvolvimento nativo puro?",
+      "answers": [
+        "Menos performance",
+        "Maior produtividade com código compartilhado",
+        "Maior dificuldade de manutenção",
+        "Mais dependência de APIs nativas"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "É possível acessar APIs nativas com React Native?",
+      "answers": [
+        "Não",
+        "Sim, via módulos nativos",
+        "Somente com Flutter",
+        "Somente com Swift"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "O que é Expo?",
+      "answers": [
+        "Framework baseado em Vue",
+        "Editor de código",
+        "Toolchain para facilitar o desenvolvimento React Native",
+        "IDE para Android"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "React Native usa qual engine de renderização?",
+      "answers": [
+        "Blink",
+        "V8",
+        "Yoga",
+        "WebKit"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "React Native é ideal para:",
+      "answers": [
+        "Games 3D",
+        "Apps multiplataforma",
+        "Kernel drivers",
+        "Sites estáticos"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Metro bundler serve para:",
+      "answers": [
+        "Compilar Java",
+        "Empacotar o código JS",
+        "Compilar código nativo",
+        "Gerenciar dependências"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "Estrutura do código": [
+    {
+      "question": "Qual arquivo é o ponto de entrada padrão de um app React Native?",
+      "answers": [
+        "index.js",
+        "app.config.js",
+        "main.js",
+        "server.js"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "O que significa JSX?",
+      "answers": [
+        "Java Syntax XML",
+        "JavaScript XML",
+        "JavaScript Extension",
+        "Java Structured Xcode"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Como definimos um componente funcional?",
+      "answers": [
+        "class MyComponent {}",
+        "function MyComponent() {}",
+        "createComponent(MyComponent)",
+        "defineComponent = () => {}"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "O que faz o comando export default?",
+      "answers": [
+        "Define estilo global",
+        "Define que o arquivo exporta uma função",
+        "Permite importar o componente em outros arquivos",
+        "Inicia o app"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Como estilizamos um componente em React Native?",
+      "answers": [
+        "Com CSS",
+        "Com arquivos .scss",
+        "Com objeto JS e StyleSheet",
+        "Inline com HTML"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Como criamos um estilo reutilizável?",
+      "answers": [
+        "Usando StyleSheet.create",
+        "Definindo props",
+        "Importando CSS",
+        "Usando styled-components apenas"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Como importamos o componente View?",
+      "answers": [
+        "import { View } from 'react'",
+        "import View from 'react-native'",
+        "import { View } from 'react-native'",
+        "require('View')"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Como renderizamos múltiplos elementos sem criar uma View extra?",
+      "answers": [
+        "return [el1, el2]",
+        "return <></>",
+        "return el1 + el2",
+        "return {...}"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual das opções é um componente de entrada?",
+      "answers": [
+        "Text",
+        "View",
+        "TextInput",
+        "Image"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Para que serve a prop 'key' em listas?",
+      "answers": [
+        "Identificar o item unicamente",
+        "Adicionar animações",
+        "Sincronizar com banco de dados",
+        "Aplicar estilos"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Qual o tipo de retorno de um componente React?",
+      "answers": [
+        "Objeto JavaScript",
+        "Função",
+        "Elemento JSX",
+        "JSON"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Como renderizar condicionalmente algo no JSX?",
+      "answers": [
+        "if (cond) return <X>",
+        "{cond ? <X /> : null}",
+        "cond && <X />",
+        "ambas B e C"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Como comentar em JSX?",
+      "answers": [
+        "// comentário",
+        "{/* comentário */}",
+        "<!-- comentário -->",
+        "# comentário"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Como passamos dados entre componentes?",
+      "answers": [
+        "via context",
+        "via props",
+        "via redux",
+        "todas as anteriores"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "O que faz o método .map em listas JSX?",
+      "answers": [
+        "Filtra os elementos",
+        "Ordena os elementos",
+        "Transforma e renderiza itens",
+        "Clona os elementos"
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "Tipos de View": [
+    {
+      "question": "Qual componente serve como container visual padrão?",
+      "answers": [
+        "Text",
+        "View",
+        "ScrollView",
+        "Modal"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual componente evita sobreposição com áreas do sistema (como o notch)?",
+      "answers": [
+        "View",
+        "SafeAreaView",
+        "KeyboardAvoidingView",
+        "Modal"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "ScrollView é usado quando:",
+      "answers": [
+        "Lista longa e dinâmica",
+        "Layout com poucos elementos",
+        "Desejamos scroll com muitos dados",
+        "Queremos carregar imagens"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual componente mostra uma caixa de diálogo sobre a UI?",
+      "answers": [
+        "View",
+        "TouchableOpacity",
+        "Modal",
+        "Alert"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "TouchableOpacity é utilizado para:",
+      "answers": [
+        "Criar layouts",
+        "Mostrar texto",
+        "Criar botões com feedback visual",
+        "Abrir modais"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "TouchableWithoutFeedback é útil quando queremos:",
+      "answers": [
+        "Exibir uma lista",
+        "Capturar toques fora do teclado",
+        "Criar botões com animação",
+        "Detectar gestos"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "TextInput é usado para:",
+      "answers": [
+        "Mostrar título",
+        "Capturar entrada de texto",
+        "Renderizar imagens",
+        "Mostrar alertas"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Pressable substitui:",
+      "answers": [
+        "FlatList",
+        "View",
+        "Touchable*",
+        "Alert"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "ActivityIndicator mostra:",
+      "answers": [
+        "Texto de erro",
+        "Animação de carregamento",
+        "Modal fechado",
+        "Barra de progresso"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Image é utilizado para:",
+      "answers": [
+        "Renderizar dados",
+        "Mostrar uma imagem estática ou remota",
+        "Criar inputs",
+        "Detectar erros"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual das opções permite scroll horizontal?",
+      "answers": [
+        "FlatList horizontal",
+        "Text",
+        "Image",
+        "ActivityIndicator"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "KeyboardAvoidingView ajuda com:",
+      "answers": [
+        "Renderizar imagens",
+        "Manter elementos visíveis ao abrir teclado",
+        "Listas grandes",
+        "Transições de tela"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Como esconder temporariamente um componente?",
+      "answers": [
+        "Remover do render",
+        "Usar prop hidden",
+        "Condicional com null",
+        "Usar função delay"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Qual dessas views é recomendada para longas listas?",
+      "answers": [
+        "ScrollView",
+        "View",
+        "FlatList",
+        "Modal"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Qual componente exibe múltiplas linhas de texto?",
+      "answers": [
+        "View",
+        "Image",
+        "Text",
+        "Alert"
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "Tipos de Lista": [
+    {
+      "question": "FlatList é ideal para:",
+      "answers": [
+        "Pequenos conteúdos fixos",
+        "Grandes listas com desempenho",
+        "Scroll horizontal apenas",
+        "Animações nativas"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "ScrollView renderiza:",
+      "answers": [
+        "Apenas o visível",
+        "Tudo de uma vez",
+        "Por partes",
+        "Por seção"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "O que é necessário para renderizar uma FlatList?",
+      "answers": [
+        "renderRow",
+        "data e renderItem",
+        "useEffect",
+        "inputText"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Para otimizar uma FlatList usamos:",
+      "answers": [
+        "onScroll",
+        "useMemo",
+        "keyExtractor",
+        "View"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "SectionList é útil quando:",
+      "answers": [
+        "Queremos animações",
+        "Temos dados agrupados por seção",
+        "Listamos formulários",
+        "Lidamos com dados únicos"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "ListEmptyComponent é usado para:",
+      "answers": [
+        "Adicionar cabeçalho",
+        "Renderizar erro",
+        "Renderizar algo quando a lista está vazia",
+        "Apagar dados"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Como tornar uma FlatList horizontal?",
+      "answers": [
+        "Usar flexDirection",
+        "horizontal={true}",
+        "type='horizontal'",
+        "ScrollMode='horizontal'"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "O que faz onEndReached?",
+      "answers": [
+        "Detecta rolagem total",
+        "Indica final da lista para carregamento",
+        "Remove dados",
+        "Aplica estilo"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "extraData serve para:",
+      "answers": [
+        "Enviar props extras",
+        "Reforçar que lista deve re-renderizar",
+        "Remover dados",
+        "Criar estilos"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Como renderizar separadores entre itens da FlatList?",
+      "answers": [
+        "itemSeparatorComponent",
+        "renderItem",
+        "ListFooterComponent",
+        "horizontalSeparator"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "initialNumToRender controla:",
+      "answers": [
+        "Quantidade inicial de itens renderizados",
+        "Altura da lista",
+        "Scroll automático",
+        "Número de seções"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Como atualizar dinamicamente os itens da lista?",
+      "answers": [
+        "keyExtractor",
+        "setState com nova lista",
+        "forceUpdate",
+        "componentWillReceiveProps"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "FlatList exige qual propriedade como única?",
+      "answers": [
+        "renderRow",
+        "style",
+        "keyExtractor",
+        "Touchable"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Qual dessas listas é ideal para dados seccionados?",
+      "answers": [
+        "FlatList",
+        "ScrollView",
+        "SectionList",
+        "Picker"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Qual comportamento não é padrão da FlatList?",
+      "answers": [
+        "Renderização preguiçosa",
+        "Scroll automático",
+        "Scroll vertical",
+        "Item por item"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "React Navigation": [
+    {
+      "question": "O que é React Navigation?",
+      "answers": [
+        "Biblioteca de autenticação",
+        "Ferramenta de UI",
+        "Sistema de navegação entre telas",
+        "Editor de código"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Para usar React Navigation, é necessário:",
+      "answers": [
+        "Instalar via npm/yarn",
+        "Apenas importar",
+        "Configurar no native-base",
+        "Criar View manualmente"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "NavigationContainer deve envolver:",
+      "answers": [
+        "Cada botão",
+        "Toda a navegação do app",
+        "Cada componente",
+        "A View raiz"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "createStackNavigator serve para:",
+      "answers": [
+        "Criar listas",
+        "Gerenciar contexto",
+        "Navegação tipo pilha",
+        "Estilizar componentes"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "navigate('Home') faz o quê?",
+      "answers": [
+        "Vai para Home",
+        "Fecha o app",
+        "Recarrega tela",
+        "Salva dados"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Como passar parâmetros entre telas?",
+      "answers": [
+        "props",
+        "navigation.navigate('Tela', { id: 1 })",
+        "state",
+        "contexto"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Para acessar os parâmetros da tela usamos:",
+      "answers": [
+        "useRoute",
+        "useParams",
+        "getParams",
+        "this.params"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Para ir para a tela anterior usamos:",
+      "answers": [
+        "navigate(-1)",
+        "navigation.goBack()",
+        "goToPrevious()",
+        "return"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual hook retorna a função navigation?",
+      "answers": [
+        "useContext",
+        "useNavigation",
+        "useRoute",
+        "useRef"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual tipo de navegação permite abas na parte inferior?",
+      "answers": [
+        "Stack",
+        "Drawer",
+        "Tab",
+        "Switch"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Drawer Navigation exibe:",
+      "answers": [
+        "Menu lateral",
+        "Tabs inferiores",
+        "Scroll infinito",
+        "Imagens"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "initialRouteName define:",
+      "answers": [
+        "Rota padrão inicial",
+        "A primeira View",
+        "Um botão",
+        "Título da tela"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Como substituir uma tela na pilha?",
+      "answers": [
+        "push()",
+        "navigate()",
+        "replace()",
+        "reload()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "navigation.push() faz:",
+      "answers": [
+        "Fecha a tela",
+        "Empilha nova instância",
+        "Substitui tela",
+        "Renderiza condicional"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual plugin é usado para navegação com abas?",
+      "answers": [
+        "@react-navigation/stack",
+        "@react-navigation/bottom-tabs",
+        "react-native-tabs",
+        "react-tab-navigator"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "Estado": [
+    {
+      "question": "O que useState retorna?",
+      "answers": [
+        "String e objeto",
+        "Função e número",
+        "Valor e função de atualização",
+        "Objeto JSON"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Como atualizar um estado com base no valor anterior?",
+      "answers": [
+        "setState(count + 1)",
+        "setState(() => count++)",
+        "setState(prev => prev + 1)",
+        "count++"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "O que dispara uma nova renderização em React Native?",
+      "answers": [
+        "setTimeout",
+        "setState ou setX de useState",
+        "useRef",
+        "useMemo"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual hook usamos para efeitos colaterais?",
+      "answers": [
+        "useState",
+        "useContext",
+        "useEffect",
+        "useLayout"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Como executamos um efeito apenas uma vez?",
+      "answers": [
+        "useEffect(() => {}, [])",
+        "useEffect(() => {}, [true])",
+        "useEffect(() => {})",
+        "useEffect(true)"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Como mantemos múltiplos estados relacionados?",
+      "answers": [
+        "useMemo",
+        "useState com objeto",
+        "setTimeout",
+        "useId"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "O que useReducer retorna?",
+      "answers": [
+        "Estado e ação",
+        "Array com estado e dispatch",
+        "Set de valores",
+        "Função pura"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Quando usar useReducer ao invés de useState?",
+      "answers": [
+        "Nunca",
+        "Em qualquer estado",
+        "Com lógica de atualização mais complexa",
+        "Apenas com Redux"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "O que é lifting state up?",
+      "answers": [
+        "Enviar estado do pai para filho",
+        "Mover estado para componente ancestral comum",
+        "Guardar dados localmente",
+        "Subir a hierarquia de rotas"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Como atualizamos o estado de um input controlado?",
+      "answers": [
+        "value={text}",
+        "onChangeText",
+        "setText",
+        "Todas as anteriores"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Como apagamos ou limpamos um estado?",
+      "answers": [
+        "setX()",
+        "setX(null)",
+        "setX('')",
+        "Todas são possíveis"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "useEffect com dependências vazias [] executa:",
+      "answers": [
+        "A cada render",
+        "Nunca",
+        "Somente no primeiro render",
+        "Ao fechar tela"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Para monitorar mudanças de estado, usamos:",
+      "answers": [
+        "console.log no setState",
+        "useEffect com dependências",
+        "debugger",
+        "useState"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "O estado de um componente é:",
+      "answers": [
+        "Imutável diretamente",
+        "Mutável via props",
+        "Sem controle",
+        "Controlado por CSS"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Como acessar o estado atual dentro de useEffect?",
+      "answers": [
+        "Via argumento",
+        "Declarando fora do hook",
+        "Incluindo no array de dependências",
+        "Não é possível"
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "AsyncStorage": [
+    {
+      "question": "O que é AsyncStorage?",
+      "answers": [
+        "Banco de dados remoto",
+        "Armazenamento local chave-valor",
+        "Gerenciador de estado",
+        "Hook de rede"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Como salvamos um dado com AsyncStorage?",
+      "answers": [
+        "setItem(chave, valor)",
+        "saveData()",
+        "store()",
+        "write(chave, valor)"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Qual biblioteca usamos atualmente para AsyncStorage?",
+      "answers": [
+        "react-native-core",
+        "expo-storage",
+        "@react-native-async-storage/async-storage",
+        "native-storage"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Para recuperar um dado usamos:",
+      "answers": [
+        "getItem(chave)",
+        "read()",
+        "fetch()",
+        "getData()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Por que usamos JSON.stringify ao salvar objetos?",
+      "answers": [
+        "Evita erros de JSON",
+        "AsyncStorage só armazena strings",
+        "Salva como XML",
+        "Não é necessário"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Como limpar todos os dados do AsyncStorage?",
+      "answers": [
+        "reset()",
+        "removeAll()",
+        "AsyncStorage.clear()",
+        "clearAllData()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Qual função remove um item específico?",
+      "answers": [
+        "removeItem(chave)",
+        "delete()",
+        "clearOne()",
+        "erase()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "AsyncStorage é síncrono ou assíncrono?",
+      "answers": [
+        "Síncrono",
+        "Assíncrono",
+        "Depende da plataforma",
+        "Depende do dado"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Qual bloco usamos para lidar com erros no AsyncStorage?",
+      "answers": [
+        "try/catch",
+        "if/else",
+        "validate()",
+        "watch()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Onde os dados do AsyncStorage são armazenados?",
+      "answers": [
+        "Servidor remoto",
+        "Memória RAM",
+        "Armazenamento interno do dispositivo",
+        "Redux"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}
