@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 import { auth } from '../firebase/config';
-import { signInWithEmailAndPassword } from '@firebase/app';
+import { signInWithEmailAndPassword } from 'firebase/auth';  // Changed from firebase/app
 import { useNavigation } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage'; // Import AsyncStorage
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Login = () => {
-  const [emaillogin, setEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigation = useNavigation();
 
   const handleLogin = async () => {
     try {
-      const userCredential = await signInWithEmailAndPassword(auth, emaillogin, password);
-      const userId = userCredential.user.uid; // Get the user's unique identifier
-      console.log('Login successful');
+      console.log('Attempting login with:', email);
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const userId = userCredential.user.uid;
+      console.log('Login successful, userId:', userId);
 
-      // Save the user ID to AsyncStorage
       await AsyncStorage.setItem('userId', userId);
-
-      navigation.navigate('Home'); // Navigate to the Home screen
+      navigation.navigate('Home');
     } catch (err) {
+      console.error('Login error:', err);
       if (err.code === 'auth/user-not-found') {
         setError('No user found with this email.');
       } else if (err.code === 'auth/wrong-password') {
@@ -29,7 +29,7 @@ const Login = () => {
       } else if (err.code === 'auth/invalid-email') {
         setError('Invalid email format.');
       } else {
-        setError('Login failed. Please try again.');
+        setError(`Login failed: ${err.message}`);
       }
     }
   };
@@ -41,7 +41,7 @@ const Login = () => {
       <TextInput
         style={styles.input}
         placeholder="Email"
-        value={emaillogin}
+        value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
       />
@@ -52,22 +52,18 @@ const Login = () => {
         onChangeText={setPassword}
         secureTextEntry
       />
-<TouchableOpacity style={styles.button} onPress={handleLogin}>
-  <Text style={styles.buttonText}>Login</Text>
-</TouchableOpacity>    
-    
-
-{/* Button to navigate to Podium */}
-<TouchableOpacity
-  style={[styles.button, styles.podiumButton]}
-  onPress={() => navigation.navigate('Podium')}
->
-  <Text style={styles.buttonText}>Go to Podium</Text>
-</TouchableOpacity>
-</View>
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <Text style={styles.buttonText}>Login</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={[styles.button, styles.podiumButton]}
+        onPress={() => navigation.navigate('Podium')}
+      >
+        <Text style={styles.buttonText}>Go to Podium</Text>
+      </TouchableOpacity>
+    </View>
   );
 };
-
 const styles = StyleSheet.create({
   button: {
     backgroundColor: '#6641F3',
