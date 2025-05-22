@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Alert } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { getDatabase, ref, set } from 'firebase/database'; // Import Firebase Realtime Database
+import React from 'react';
+import { Alert, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { auth } from '../firebase/config'; // Import Firebase auth to get the current user
 
 const ReviewAnswers = () => {
@@ -38,17 +38,24 @@ const ReviewAnswers = () => {
     }
   };
 
+  // Render each question in FlatList
+  const renderItem = ({ item, index }) => (
+    <View style={styles.questionContainer}>
+      <Text style={styles.question}>{index + 1}. {item.question}</Text>
+      <Text style={styles.answer}>
+        Sua resposta: {answers[index] !== null ? item.answers[answers[index]] : 'Not Answered'}
+      </Text>
+    </View>
+  );
+
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       <Text style={styles.title}>Review Your Answers</Text>
-      {selectedQuestions.map((question, index) => (
-        <View key={index} style={styles.questionContainer}>
-          <Text style={styles.question}>{index + 1}. {question.question}</Text>
-          <Text style={styles.answer}>
-            Sua resposta: {answers[index] !== null ? question.answers[answers[index]] : 'Not Answered'}
-          </Text>
-        </View>
-      ))}
+      <FlatList
+        data={selectedQuestions}
+        renderItem={renderItem}
+        keyExtractor={(item, index) => index.toString()}
+      />
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate('Quiz')}
@@ -61,7 +68,7 @@ const ReviewAnswers = () => {
       >
         <Text style={styles.buttonText}>Finish Quiz</Text>
       </TouchableOpacity>
-    </ScrollView>
+    </View>
   );
 };
 
